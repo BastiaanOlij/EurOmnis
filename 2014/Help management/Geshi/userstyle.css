@@ -1,0 +1,19 @@
+/* Omnis colors -- not parsed from our gecki file so included here */
+
+.code.omnis .kw1 { color: #996600; font-weight: bold; }
+.code.omnis .kw2 { color: #000000; font-weight: bold; }
+.code.omnis .kw3 { color: #000000; font-weight: bold; }
+.code.omnis .kw4 { color: #000000; font-weight: bold; }
+.code.omnis .kw5 { color: #000000; font-weight: bold; }
+.code.omnis .kw6 { color: #000000; font-weight: bold; }
+.code.omnis .kw97 { color: #000000; font-weight: bold; }
+.code.omnis .kw98 { color: #00EE00; font-weight: bold; }
+.code.omnis .kw99 { color: #EE0000; font-weight: bold; }
+.code.omnis .co1 { color: #FF0000; }
+.code.omnis .coMULTI { color: #FF0000; }
+.code.omnis .br0 { color: #009900; }
+.code.omnis .st0 { color: #800000; }
+.code.omnis .stHARD { color: #800000; }
+.code.omnis .nu0 { color: #000000; }
+.code.omnis .re1 { color: #996600; }
+.code.omnis .re2 { color: #996600; }
