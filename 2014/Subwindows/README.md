@@ -1,5 +1,5 @@
 Included here are the version of my widgets library as used for the 2014 EurOmnis session on subwindows and an example library showing this and other techniques discussed during the sessions.
 
-I may post a writeup of the main technique that lies at the basis of these samples on my blog soon for those who were unable to attent my session.
+Load the widgets library first then start up the example library.
 
-Note that the widgets library will likely soon be uploaded to a public Omnis VCS (currently being setup).
+There is a write-up for the basic approach on my blog here: http://bastiaanolij.blogspot.com.au/2014/10/fields-based-on-subwindows.html
