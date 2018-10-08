@@ -1,0 +1,137 @@
+[
+	{
+		"name": "$construct",
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lvRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$destruct",
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$exectool",
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$exechelp",
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pvInstName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1,
+				"desc": "Name of the instance on top when calling help (not specified)"
+			},
+			{
+				"name": "pvWindowTitle",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2,
+				"desc": "Name of the window title of the top window (not specified)"
+			},
+			{
+				"name": "pvHelpFileName",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3,
+				"desc": "Helpfile name"
+			},
+			{
+				"name": "pvDocumentName",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 4,
+				"desc": "Name of the document"
+			},
+			{
+				"name": "pvTopic",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 5,
+				"desc": "Name of the topic (omnis help only?)"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lvMain",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lvMethods",
+				"order": 9,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lvOpenURL",
+				"order": 7,
+				"type": "kObject",
+				"subtype": "oOpenURL",
+				"sublen": 0
+			},
+			{
+				"name": "lvURL",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "openHelpBrowser",
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pvURL",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

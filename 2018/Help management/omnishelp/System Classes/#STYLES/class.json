@@ -1,0 +1,438 @@
+{
+	"classtype": "kSystemtable",
+	"omnisversion": "9.0",
+	"internalversion": 4,
+	"nextident": 6,
+	"properties": {
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2011-06-30 08:15:08",
+		"desc": "",
+		"external": false,
+		"moddate": "2018-10-08 02:57:24",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": "1"
+	},
+	"styles": [
+		{
+			"name": "CtrlPushButton",
+			"ident": 1,
+			"properties": {
+				"desc": "Standard Push Button Object",
+				"hasalign": false,
+				"hasbackcolor": true,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": true,
+				"hasbordercolor": true,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": false,
+				"hasforecolor": true,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(255,255,255)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Microsoft Sans Serif",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(238,238,238)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemePushButton",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(255,255,255)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Microsoft Sans Serif",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(238,238,238)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlLabel",
+			"ident": 2,
+			"properties": {
+				"desc": "Standard Background Label Object",
+				"hasalign": false,
+				"hasbackcolor": true,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": true,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": false,
+				"hasforecolor": true,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 15,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Microsoft Sans Serif",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 15,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 15,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemeLabel",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 15,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Microsoft Sans Serif",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlEditText",
+			"ident": 3,
+			"properties": {
+				"desc": "Standard Edit Text Object",
+				"hasalign": false,
+				"hasbackcolor": true,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": true,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": false,
+				"hasforecolor": true,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(255,255,221)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 1,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderEmbossedChisel",
+						"fontname": "Microsoft Sans Serif",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "kWhite",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderCtrlEdit",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderCtrlEdit",
+						"fontname": "ThemeSmallSystem",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(255,255,221)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 1,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Microsoft Sans Serif",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "kWhite",
+						"textcolor": "kColorWindowText"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlListBox",
+			"ident": 4,
+			"properties": {
+				"desc": "Standard List Box Object",
+				"hasalign": false,
+				"hasbackcolor": true,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": false,
+				"hasbordercolor": true,
+				"haseffect": true,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": false,
+				"hasforecolor": true,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(255,255,204)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(191,191,153)",
+						"effect": "kBorderPlain",
+						"fontname": "Microsoft Sans Serif",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(255,255,255)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderCtrlList",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderCtrlList",
+						"fontname": "Lucida Grande",
+						"fontsize": 12,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Omnis Windows System",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlRadioButton",
+			"ident": 5,
+			"properties": {
+				"desc": "Standard Radio Button",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Microsoft Sans Serif",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemeApplication",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Omnis Windows System",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				}
+			]
+		}
+	]
+}

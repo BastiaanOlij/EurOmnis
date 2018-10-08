@@ -1,0 +1,36 @@
+{
+	"classtype": "kTask",
+	"omnisversion": "9.0",
+	"internalversion": 29,
+	"tvardefs": [
+		{
+			"name": "tvToolID",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0,
+			"initval": "0"
+		}
+	],
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2011-06-30 08:15:08",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": false,
+		"issupercomponent": false,
+		"moddate": "2018-10-08 11:03:49",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": "1"
+	}
+}

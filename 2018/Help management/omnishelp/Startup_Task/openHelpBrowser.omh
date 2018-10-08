@@ -1,0 +1,6 @@
+If $iwindows.$findname('wHelpBrowser')
+	Do $iwindows.wHelpBrowser.$setUrl(pvURL)
+	Do $iwindows.wHelpBrowser.$bringtofront()
+Else
+	Do $windows.wHelpBrowser.$open('wHelpBrowser',kWindowCenter,pvURL)
+End If

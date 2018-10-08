@@ -1,0 +1,36 @@
+[
+	{
+		"name": "$construct",
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pvURL",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setUrl",
+		"order": 2,
+		"pvardefs": [
+			{
+				"name": "pvURL",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

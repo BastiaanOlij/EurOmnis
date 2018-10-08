@@ -1,0 +1,4 @@
+# Enter your initialization code here
+Calculate $cinst.$title as 'Help'
+Calculate $cinst.$objs.Browser.$edgefloat as kEFposnClient
+Calculate $cinst.$objs.Browser.$urlorcontrolname as pvURL

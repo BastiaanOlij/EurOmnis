@@ -1,0 +1,3 @@
+# Enter your initialization code here
+Calculate ivURL as 'http://localhost/wiki/doku.php?id=<page>'
+Do $prefs.$getconfigstring(kEnvToolHelp,tvToolID,ivURL) Returns ivURL

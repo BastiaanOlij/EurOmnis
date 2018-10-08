@@ -1,0 +1,9 @@
+# Make sure ignore external is on
+Calculate $clib.$ignoreexternal as kTrue
+#
+# Install this library as our help tool
+Do $root.$modes.$installtool(kEnvToolHelp) Returns tvToolID
+If tvToolID=0
+	# Should find a way to unload Omnis' own help.lbs file but the only way so far I've found is to remove it from startup.
+	Breakpoint Omnis' build in help library is still loaded...
+End If

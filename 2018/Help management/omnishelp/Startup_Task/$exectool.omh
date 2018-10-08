@@ -1,0 +1,6 @@
+# This is called when we open up the help project manager
+If $iwindows.$findname('wHelpSettings')
+	Do $iwindows.wHelpSettings.$bringtofront()
+Else
+	Do $windows.wHelpSettings.$open('wHelpSettings',kWindowCenter)
+End If

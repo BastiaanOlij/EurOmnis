@@ -1,0 +1,4 @@
+On evClick      ## Event Parameters - pRow( Itemreference )
+	Do $prefs.$setconfigstring(kEnvToolHelp,tvToolID,ivURL)
+	
+	Queue close [$cinst().$name]

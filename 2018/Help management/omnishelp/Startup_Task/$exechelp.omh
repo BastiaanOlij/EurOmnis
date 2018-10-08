@@ -1,0 +1,40 @@
+Send to trace log (Diagnostic message) Trying to open help page for [pvHelpFileName] - [pvDocumentName] - [pvTopic]
+
+# Find out for which library this code is..
+Calculate lvMain as mid(pvHelpFileName,rpos(sys(9),pvHelpFileName)+1,10000)
+Calculate lvMain as mid(lvMain,1,pos('.ohf',con(lvMain,'.ohf'))-1)
+
+# Get our configured URL
+Calculate lvURL as 'http://localhost/wiki/doku.php?id=<page>'      ## Our default URL
+Do $prefs.$getconfigstring(kEnvToolHelp,tvToolID,lvURL) Returns lvURL
+
+If lvMain='omnis'
+	# Omnis internal help
+	Calculate lvURL as 'https://omnis.net/documentation/commandref/index.jsp'
+	
+	If len(pvDocumentName)
+		# Calculate pvDocumentName as mid(pvDocumentName,1,pos('.',con(pvDocumentName,'.'))-1)      ## Strip of extension
+		# Calculate pvDocumentName as replaceall(pvDocumentName,'/',':')
+		# Calculate lvURL as replaceall(lvURL,'<page>',con(lvMain,':',pvDocumentName))
+	Else If len(pvTopic)
+		Calculate pvTopic as low(mid(pvTopic,1,pos(' ',con(pvTopic,' '))-1))
+		Calculate lvURL as con(lvURL,'?detail=',pvTopic,'.html')
+	End If
+	
+	# And open our page
+	Do method openHelpBrowser (lvURL)
+Else If len(lvMain)=0
+	# What to do... what to do..
+Else If $itasks.$findname(lvMain).$openhelp.$cando
+	Do $itasks.$findname(lvMain).$openhelp(pvDocumentName)
+Else
+	Calculate pvDocumentName as mid(pvDocumentName,1,pos('.',con(pvDocumentName,'.'))-1)      ## Strip of extension
+	Calculate pvDocumentName as replaceall(pvDocumentName,'/',':')
+	CGIEncode (pvDocumentName) Returns pvDocumentName
+	Calculate lvURL as replaceall(lvURL,'<page>',con(lvMain,':',pvDocumentName))
+	
+	# And open our page
+	Do method openHelpBrowser (lvURL)
+End If
+
+Quit method
