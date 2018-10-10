@@ -1,4 +1,6 @@
 *.php linguist-vendored
+*.omh linguist-language=Omnis
+*.lbs linguist-language=Omnis
 
 *.c eol=crlf
 *.cpp eol=crlf
