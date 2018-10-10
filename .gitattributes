@@ -1,0 +1,6 @@
+*.php linguist-vendored
+
+*.c eol=crlf
+*.cpp eol=crlf
+*.omh eol=crlf
+*.json eol=crlf
