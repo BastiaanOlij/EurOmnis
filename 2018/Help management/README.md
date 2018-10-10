@@ -19,5 +19,6 @@ Links
 https://www.dokuwiki.org/dokuwiki
 http://www.sphinx-doc.org/en/master/
 https://omnis.net/documentation/index.jsp
+https://github.com/BastiaanOlij/EurOmnis
 
 
