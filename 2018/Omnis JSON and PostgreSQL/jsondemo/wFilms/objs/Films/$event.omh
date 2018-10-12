@@ -1,0 +1,12 @@
+On evTreeExpand      ## Event Parameters - pNodeItem( Itemreference )
+	
+On evTreeCollapse      ## Event Parameters - pNodeItem( Itemreference )
+	
+On evClick
+	Set reference lvNode to $cinst.$objs.Films.$currentnode()
+	If lvNode.$ident=0
+		Do $cinst.$objs.Film.$visible.$assign(kFalse)
+	Else
+		Do $cinst.$objs.Film.$visible.$assign(kTrue)
+		Do $cinst.$objs.Film.$load(lvNode.$ident)
+	End If

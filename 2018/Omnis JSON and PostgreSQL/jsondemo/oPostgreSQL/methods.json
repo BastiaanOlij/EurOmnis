@@ -1,0 +1,113 @@
+[
+	{
+		"name": "$exec_function",
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pvFunctionName",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pvP1",
+				"order": 4,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pvP2",
+				"order": 6,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pvP3",
+				"order": 7,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
+			},
+			{
+				"name": "pvP4",
+				"order": 8,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 5
+			},
+			{
+				"name": "pvP5",
+				"order": 9,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 6
+			},
+			{
+				"name": "pvP6",
+				"order": 12,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 7
+			},
+			{
+				"name": "pvP7",
+				"order": 10,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 8
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lvCnt",
+				"order": 11,
+				"type": "kInteger",
+				"subtype": "kShortint",
+				"sublen": 0
+			},
+			{
+				"name": "lvResult",
+				"order": 5,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lvStatementObj",
+				"order": 1,
+				"type": "kObjectref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lvSuccess",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"initval": "kTrue"
+			}
+		]
+	},
+	{
+		"name": "$lastError",
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	}
+]

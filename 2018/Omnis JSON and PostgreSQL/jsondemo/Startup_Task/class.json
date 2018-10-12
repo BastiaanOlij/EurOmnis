@@ -1,0 +1,35 @@
+{
+	"classtype": "kTask",
+	"omnisversion": "9.0",
+	"internalversion": 5,
+	"tvardefs": [
+		{
+			"name": "tvDB",
+			"order": 1,
+			"type": "kObject",
+			"subtype": "oPostgreSQL",
+			"sublen": 0
+		}
+	],
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-10-08 17:38:05",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": false,
+		"issupercomponent": false,
+		"moddate": "2018-10-08 17:42:44",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

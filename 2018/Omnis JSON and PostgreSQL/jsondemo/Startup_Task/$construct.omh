@@ -1,0 +1,7 @@
+Calculate tvDB.$database as 'euromnis'
+Calculate tvDB.$port as 5433
+Calculate tvDB.$quotedidentifier as kFalse
+Do tvDB.$logon('localhost','postgres','postgres') Returns lvSuccess
+If not(lvSuccess)
+	OK message Failed { Couldn't connect to the database }
+End If

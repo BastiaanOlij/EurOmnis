@@ -1,0 +1,51 @@
+Do $cinst.$newstatementref() Returns lvStatementObj
+
+If lvStatementObj.$validref
+	# need to add some error handling!!
+	Begin statement
+	Sta:select [pvFunctionName](
+	If $cparmcount>1
+		Sta:@[pvP1]
+	End If
+	If $cparmcount>2
+		Sta:, @[pvP2]
+	End If
+	If $cparmcount>3
+		Sta:, @[pvP3]
+	End If
+	If $cparmcount>4
+		Sta:, @[pvP4]
+	End If
+	If $cparmcount>5
+		Sta:, @[pvP5]
+	End If
+	If $cparmcount>6
+		Sta:, @[pvP6]
+	End If
+	If $cparmcount>7
+		Sta:, @[pvP7]
+	End If
+	Sta:)
+	End statement
+	Get statement #S1      ## for debugging
+	Do lvStatementObj.$execdirect() Returns lvSuccess
+	If lvSuccess
+		Do lvStatementObj.$fetch(lvResult,kFetchAll)
+		If (lvResult.$linecount=0)
+			Calculate ivLastError as 'There are no results'
+		End If
+	Else
+		Calculate ivLastError as con(lvStatementObj.$nativeerrorcode,' - ',lvStatementObj.$nativeerrortext)
+	End If
+	
+	Do lvStatementObj.$deleteref()
+	If lvSuccess
+		Quit method lvResult
+	Else
+		Quit method #NULL
+	End If
+Else
+	Calculate ivLastError as 'Can''t create statement object'
+End If
+
+Quit method #NULL

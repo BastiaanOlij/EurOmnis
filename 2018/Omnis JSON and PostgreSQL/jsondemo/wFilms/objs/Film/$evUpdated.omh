@@ -1,0 +1,11 @@
+Do $cinst.$objs.Films.$buildTree()
+
+Set reference lvNode to $cinst.$objs.Films.$findnodeident($cinst.$objs.Films,pvFilmId,kTrue)
+If lvNode
+	Set reference lvCategory to lvNode.$nodeparent
+	If lvCategory
+		Do lvCategory.$expand()
+	End If
+	
+	Do $cinst.$objs.Films.$setcurrentnode(lvNode)
+End If

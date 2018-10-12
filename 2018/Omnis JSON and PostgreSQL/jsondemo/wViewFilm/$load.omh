@@ -1,0 +1,22 @@
+Do tvDB.$exec_function('get_film',pvFilmId) Returns lvResult
+
+If lvResult.$linecount>0
+	Calculate lvJSON as lvResult.1.C1
+	
+	Do OJSON.$jsontolistorrow(lvJSON,lvErr,kTrue) Returns lvData
+	If lvErr<>''
+		OK message Error {[lvErr]}
+	Else
+		Do ivFilmRow.$assignrow(lvData,kTrue)
+		
+		Do ivActorsList.$clear()
+		For lvData.Actors.$line from 1 to lvData.Actors.$linecount step 1
+			Calculate lvActor as lvData.Actors.C1
+			Do ivActorsList.$add().$assignrow(lvActor,kTrue)
+		End For
+	End If
+	
+	Do $cinst.$redraw(kTrue,kTrue,kTrue)
+Else
+	OK message Error { [tvDB.$lastError()] }
+End If

@@ -1,0 +1,28 @@
+On evClick      ## Event Parameters - pRow( Itemreference )
+	Begin reversible block
+		Calculate #FDT as 'yMD H:N:S'      ## make sure the dates are formatted in a way that PostgreSQL understands it
+	End reversible block
+	Calculate lvDataRow as ivFilmRow
+	Do lvDataRow.$cols.$add('Actors',kInteger,k32bitint)
+	Calculate lvDataRow.Actors as 0
+	
+	For ivActorsList.$line from 1 to ivActorsList.$linecount step 1
+		Calculate lvActorRow as ivActorsList
+		Do OJSON.$listorrowtojson(lvActorRow,kUniTypeCharacter,lvErr) Returns lvJSON
+		If ivActorsList.$line>1
+			Calculate lvActorsJSON as con(lvActorsJSON,',')
+		End If
+		Calculate lvActorsJSON as con(lvActorsJSON,lvJSON)
+	End For
+	
+	Do OJSON.$listorrowtojson(lvDataRow,kUniTypeCharacter,lvErr) Returns lvJSON
+	
+	Calculate lvJSON as replace(lvJSON,'"Actors":0',con('"Actors":[',lvActorsJSON,']'))
+	
+	Do tvDB.$exec_function('set_film',lvJSON) Returns lvResult
+	If lvResult.$linecount=0
+		OK message Error { [tvDB.$lastError()] }
+	Else
+		Do $cinst.$load(lvResult.1.C1)
+		Do $cinst.$evUpdated(lvResult.1.C1)
+	End If

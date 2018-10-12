@@ -1,0 +1,28 @@
+[
+	{
+		"name": "$construct",
+		"order": 16384,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lvSuccess",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$destruct",
+		"order": 16385,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	}
+]

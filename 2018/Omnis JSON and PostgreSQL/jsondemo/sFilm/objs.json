@@ -1,0 +1,170 @@
+[
+	{
+		"name": "FilmId",
+		"ident": 32001,
+		"order": 1,
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"properties": {
+			"desc": "Primary key",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Title",
+		"ident": 32002,
+		"order": 2,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "Title",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Description",
+		"ident": 32003,
+		"order": 3,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "Description",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "ReleaseYear",
+		"ident": 32004,
+		"order": 4,
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"properties": {
+			"desc": "Year in which the film was released",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Language",
+		"ident": 32005,
+		"order": 5,
+		"type": "kRow",
+		"subtype": "",
+		"sublen": 0,
+		"properties": {
+			"desc": "Row with language data",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "RentalDuration",
+		"ident": 32006,
+		"order": 6,
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"properties": {
+			"desc": "Rental duration",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "RentalRate",
+		"ident": 32007,
+		"order": 7,
+		"type": "kNumber",
+		"subtype": "k2dp",
+		"sublen": 0,
+		"properties": {
+			"desc": "Rental rate",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Length",
+		"ident": 32008,
+		"order": 8,
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"properties": {
+			"desc": "Length of film",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "ReplacementCost",
+		"ident": 32009,
+		"order": 9,
+		"type": "kNumber",
+		"subtype": "k2dp",
+		"sublen": 0,
+		"properties": {
+			"desc": "Replacement cost",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Rating",
+		"ident": 32010,
+		"order": 10,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 5,
+		"properties": {
+			"desc": "Rating",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "LastUpdate",
+		"ident": 32011,
+		"order": 11,
+		"type": "kDate",
+		"subtype": "kDatetime",
+		"sublen": 0,
+		"properties": {
+			"desc": "Last updated",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "SpecialFeatures",
+		"ident": 32012,
+		"order": 12,
+		"type": "kList",
+		"subtype": "",
+		"sublen": 0,
+		"properties": {
+			"desc": "Special features",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	}
+]

@@ -1,0 +1,27 @@
+Do tvDB.$exec_function('list_films') Returns lvResult
+
+If lvResult.$linecount>0
+	Calculate lvJSON as lvResult.1.C1
+	
+	Do OJSON.$jsontolistorrow(lvJSON,lvErr,kTrue) Returns lvData
+	If lvErr<>''
+		OK message Error {[lvErr]}
+	Else
+		Do $cinst.$objs.Films.$clearallnodes()
+		
+		For lvData.$line from 1 to lvData.$linecount step 1
+			Calculate lvCategory as lvData.C1
+			Do lvTreeList.$add(lvCategory.Name,'',0,0,kFalse,kFalse,kBlack)
+			
+			For lvCategory.Films.$line from 1 to lvCategory.Films.$linecount step 1
+				Calculate lvFilm as lvCategory.Films.C1
+				Do lvTreeList.$add(lvCategory.Name,lvFilm.Title,0,lvFilm.FilmId,kFalse,kFalse,kBlack)
+			End For
+		End For
+		
+		Do $cinst.$objs.Films.$setnodelist(kFlatList,$cinst.$objs.Films,lvTreeList)
+		
+	End If
+Else
+	OK message Error {[tvDB.$lastError()]}
+End If

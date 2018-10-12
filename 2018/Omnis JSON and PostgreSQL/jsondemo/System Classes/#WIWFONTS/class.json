@@ -1,0 +1,22 @@
+{
+	"classtype": "kSystemtable",
+	"omnisversion": "9.0",
+	"internalversion": 1,
+	"properties": {
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-10-08 17:38:05",
+		"desc": "",
+		"external": false,
+		"moddate": "2018-10-08 17:38:05",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	},
+	"fonts": [
+		"Arial",
+		"Courier New",
+		"Times New Roman",
+		"Omnis Windows System",
+		"System"
+	]
+}

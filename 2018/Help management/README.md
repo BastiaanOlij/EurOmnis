@@ -21,4 +21,5 @@ http://www.sphinx-doc.org/en/master/
 https://omnis.net/documentation/index.jsp
 https://github.com/BastiaanOlij/EurOmnis
 
+Email: mux213@gmail.com or bastiaan.olij@instinctsystems.com.au
 
